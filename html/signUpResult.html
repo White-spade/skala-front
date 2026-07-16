@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 완료 - 환영합니다!</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -19,6 +20,15 @@
         <li>보안을 위해 첫 로그인 후 비밀번호를 다시 한번 확인해 주세요.</li>
         <li>작성하신 프로필 정보는 마이페이지에서 언제든지 수정이 가능합니다.</li>
     </ul>
+
+    {% if error %}
+        <p style="color:rgb(188, 55, 55);">{{ error ~ " - server not operating (but no problem!)" }}</p>
+    {% endif %}
+
+    {% if result_json %}
+        <h3>회원가입 데이터(JSON)</h3>
+        <pre>{{ result_json }}</pre>
+    {% endif %}
 
     <br>
 

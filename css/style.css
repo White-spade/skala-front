@@ -2,7 +2,7 @@
 
 과제 조건1) 별도 CSS 파일 생성 (/css/style.css)
 'Gugi'체 사용하기로 결정, 사유: 바뀐게 한눈에 보임 */
-@import url('https://fonts.googleapis.com/css2?family=Gugi:wght@400;700;800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Gugi:wght@400;700;800&display=swap');*/
 
 /* 과제 조건2) 전체 글꼴: 구글 폰트에서 마음에 드는 것을 선택하고 body 태그 선택자를 이용해 전체 폰트를 변경
 과제 조건3) 전체 줄간격, Color, 배경색을 적용 */
@@ -110,7 +110,6 @@ CSS 과제미션3 - 가독성 높은 회원가입 폼
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* 입력창 크기 키우기 */
