@@ -3,14 +3,13 @@
 ## 1. 디렉토리 구성
 - **/html, /css, /script, /media**: 기본 과제 파일 포함  
 - **/fastAPI**: main.py 및 requirements.txt 포함  
-- **/venv**: FastAPI 및 Python 가상환경  
-- **.gitignore**: pycache, DS store 제외 목적  
+- **.gitignore**: pycache, DS store, venv 제외 목적  
 - **/report_images**: README.md 보고서 작성 용도
 
 ### /html/index.html 에서 vscode 'Go Live' 직접 실행시에도 문제 없이 실행 가능
 
 ## 2. FastAPI 사용 이유
-- VSCode Live Server(Go Live) 환경에서 **405 Method not allowed** 발생  
+- VSCode Live Server(Go Live) 환경에서 **405 Method not allowed** 발생 
 - Go Live는 CRUD 중 **Read만 지원** → Post 테스트 불가  
 - Post 예제 구현을 위해 FastAPI 가상환경 구축 및 사용  
 - 관련 패키지는 `/fastAPI/requirements.txt`에서 확인 가능  
