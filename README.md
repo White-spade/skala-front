@@ -15,9 +15,9 @@
 - 관련 패키지는 `/fastAPI/requirements.txt`에서 확인 가능  
 
 ### POST 사용 화면은다음과 같다
--포스트 폼 작성(Try)
+<br>-포스트 폼 작성(Try)<br>
 ![post_Try_IMAGE](report_images/post_try.png)
--포스트 폼 결과(signUpResultPost.html with jinja2)
+<br>-포스트 폼 결과(signUpResultPost.html with jinja2)<br>
 ![post_Result_IMAGE](report_images/post_result.png)
 
 
