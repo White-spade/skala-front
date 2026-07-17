@@ -31,6 +31,6 @@ citySelect.addEventListener('change', async function(event) {
             </div>
         `;
     } else {
-        weatherBox.innerHTML = "<p>데이터를 불러오지 못했습니다.</p>";
+        weatherBox.innerHTML = "<p>⚠️ 날씨 정보를 가져오는데 실패했습니다.</p>";
     }
 });

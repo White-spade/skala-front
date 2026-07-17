@@ -6,51 +6,85 @@
     <title>Personal Main Portal</title>
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-    <header>
-        <h1>우상민의 개인 포탈</h1>
-        <p>학습 내용을 연결해놓은 Hub 페이지입니다.</p>
-    </header>
-    <nav>
-        <h2>📂 바로가기 메뉴</h2>
-        <ul>
-            <li><a href="/html/myProfile.html">나의 프로필(myProfile)</a></li>
-            <li><a href="/html/myClass.html">나의 수업(SKALA 1주차 - myClass)</a></li>
-            <li><a href="/html/myHoliday.html">나의 휴일(기습 3일휴일 - myHoliday)</a></li>
-            <li><a href="/html/myTrip.html">해외여행 앨범 (Album, 인터넷 non-Copyright pics)</a></li>
-            <li><a href="/html/signUp.html">회원가입 (Sign Up [with POST method Challange])</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>우상민의 개인 포탈</h1>
+            <p>학습 내용을 연결해놓은 Hub 페이지입니다.</p>
+        </header>
+        <nav>
+            <h2>📂 바로가기 메뉴</h2>
+            <ul>
+                <li><a href="/html/myProfile.html">나의 프로필<br>(myProfile)</a></li>
+                <li><a href="/html/myClass.html">나의 수업<br>(SKALA 1주차 - myClass)</a></li>
+                <li><a href="/html/myHoliday.html">나의 휴일<br>(기습 3일휴일 - myHoliday)</a></li>
+                <li><a href="/html/myTrip.html">해외여행 앨범<br>(Album, 인터넷 non-Copyright pics)</a></li>
+                <li><a href="/html/signUp.html">회원가입<br>(Sign Up [with POST method Challange])</a></li>
+            </ul>
+        </nav>
 
-    <hr>
+        <hr>
 
-    <div class="content-wrapper">
-        <main>
-            <h2>📌 오늘의 주요 소식</h2>
-            <section>
-                <h3>최근 공지 및 업데이트</h3>
-                <article>
-                    <h4><strong>[업데이트]</strong> 연휴 계획(myHoliday)업데이트 완료</h4>
-                    <p>7월 17일 기습 제헌절로 추가 계획을 세우게 된 Woo의 계획을 구경하세요</p>
-                    <p>작성일: <time datetime="2026-07-15">2026년 7월 15일</time></p>
-                </article>
-            </section>
-        </main>
+        <div class="content-wrapper">
+            <main>
+                <h2>📌 오늘의 주요 소식</h2>
+                <section>
+                    <h3>최근 공지 및 업데이트</h3>
+                    <h3>TETRIS👾 지금 플레이 가능<h3>
+                    <h4>Html + Css + JavaScript만으로 충분하다</h4>
+                    <p>밑의 버튼을 눌러 지금 바로 테트리스 플레이! </p>
+                    <a href="/html/tetris.html" class="btn-tetris">테트리스 플레이!</a>
 
-        <aside>
-            <h2>🌤️ 실시간 정보</h2>
-            <p>현재 위치: 광주광역시 광산구 📍</p>
-        </aside>
+                    <article>
+                        <h4><strong>[업데이트]</strong> 연휴 계획(myHoliday)업데이트 완료</h4>
+                        <p class="mainupdate-image">
+                            <img src="/media/korean_constitution_day.jpeg" alt="제헌절"><br>
+                        7월 17일 기습 제헌절로 추가 계획을 세우게 된 Woo의 계획을 구경하세요</p>
+                        <p>작성일: <time datetime="2026-07-15">2026년 7월 15일</time></p>
+                    </article>
+                </section>
+            </main>
+
+            <aside>
+                <h2>🌤️ 실시간 정보</h2>
+                <p>현재 위치: 광주광역시 광산구 📍</p>
+                <hr>
+                <section>
+                    <h3>🌤️ 실시간 세계 날씨</h3>
+                    <select id="city-select">
+                        <option value="none">도시를 선택하세요</option>
+                        <option value="37.56,126.98">대한민국 서울 🇰🇷</option>
+                        <option value="52.38,4.90">네덜란드 암스테르담	🇳🇱</option>
+                        <option value="34.04,-118.24">미국 LA 🇺🇸</option>
+                    </select>
+                    <div id="weather-box">
+                        <p>도시를 선택하면 온도와 습도가 표시됩니다.</p>
+                    </div>
+                </section>
+
+                <section class="game-area">
+                    <h3>🎮JavaScript</h3>
+                    <button class="btn-submit" onclick="updownGame()">업다운 게임 🚀</button>
+                    <button class="btn-submit" onclick="gradeCalc()">성적 계산기 📊</button>
+                    <button class="btn-submit" onclick="inMybag()">내 가방 보기 🎒</button>
+                </section>
+            </aside>
+        </div>
+
+        <hr>
+
+            <footer>
+                <p>이메일 문의: woosm901@gmail.com | 추천 학습 사이트: <a href="https://www.w3schools.com" target="_blank">W3Schools</a></p>
+                <p><small> SKALA 1주차 과제, 모든 태그는 웹 표준 시맨틱 태그로 작성되었습니다.</small></p>
+            </footer>
     </div>
-
-    <hr>
-
-        <footer>
-            <p>이메일 문의: woosm901@gmail.com | 추천 학습 사이트: <a href="https://www.w3schools.com" target="_blank">W3Schools</a></p>
-            <p><small> SKALA 1주차 과제, 모든 태그는 웹 표준 시맨틱 태그로 작성되었습니다.</small></p>
-        </footer>   
-
+    <script src="/script/upDown.js"></script>
+    <script src="/script/grade.js"></script>
+    <script src="/script/bag.js"></script>  
+    <!--script src="/script/weather.js"></script-->
+    <script type="module" src="/script/realtimeInfo.js"></script>    
 </body>
 </html>

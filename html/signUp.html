@@ -15,7 +15,7 @@
     <p>SKALA-FRONT 회원가입을 환영합니다.</p>
     <hr>
 
-    <form action="signUp.html" method="post"> <!-- method="get"-->
+    <form action="/html/signUpResult.html" method="get"> <!-- action="signUp.html" method="post"-->
         
         <fieldset>
             <legend>계정 정보</legend>
@@ -92,7 +92,9 @@
 
         <br>
 
-        <input type="submit" class="btn-submit" value="동의하고 회원가입">
+        <input type="submit" class="btn-submit" value="GET요청으로 보내기">
+        <input type="submit" class="btn-submit" value="POST요청으로 보내기" formmethod="post" formaction="/signUpResultPost">
+        <p>Post요청은 <strong>서버가 활성화 된 동안</strong> 에만 작동합니다 (405 Error may Occur)</p>
         <input type="reset" class="btn-reset" value="다시 작성">
 
     </form>

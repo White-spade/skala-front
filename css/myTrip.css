@@ -1,0 +1,31 @@
+/* Grid 활용: 여행지 앨범 3열 바둑판 배치 */
+.trip-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 구조 */
+    gap: 10px;
+}
+
+.content-wrapper {
+    display: flex;      /* 가로 배치 선언 */
+    gap: 30px;          /* 본문과 사이드바 사이의 여백 */
+    align-items: flex-start; /* 두 영역의 높이가 달라도 디자인이 깨지지 않게 설정 */
+}
+
+/** Flexbox로 메인 콘텐츠와 사이드바를 나란히 배치하기 **/ 
+main {
+    flex: 8;            /* 전체 공간 중 70%만큼의 비율을 차지 */
+    padding: 15px;
+}
+aside {
+    flex: 2;            /* 전체 공간 중 30%만큼의 비율을 차지 */
+    background-color: #f8f9fa; /* 사이드바 구분을 위해 연한 배경색 추가 */
+    padding: 15px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    /* 조건3) 여행 앨범 3열 바둑판을 모바일에서는 1열(1fr)로 */
+    .trip-grid-container {
+        grid-template-columns: 1fr;
+    }
+}

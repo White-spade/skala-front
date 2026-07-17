@@ -1,0 +1,37 @@
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+nav a {
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 부드러운 변화 */
+}
+
+nav a:hover {
+    background-color: #16a085;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    
+    /* 1. 메인 메뉴바를 가로 배치에서 세로 쌓기 구조로 변경 */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* 2. ★ 추가: 오늘의 주요소식(main)과 실시간 정보(aside)를 세로 1열로 정렬 */
+    .content-wrapper {
+        flex-direction: column; /* 가로(row)로 나열되던 flex 아이템들을 세로(column)로 변경 */
+        gap: 20px;
+    }
+
+    /* 모바일에서는 본문과 사이드바가 둘 다 화면 꽉 차게 100% 폭을 쓰도록 유도 */
+    main, aside {
+        width: 100%;
+    }
+}
